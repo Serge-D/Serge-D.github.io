@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jeu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jeu CV Dingreville Serge</title>
+</head>
+    <body>
+        <!-- Menu du jeu -->
+        <header>
+
+            <h1>DINGREVILLE SERGE</h1>
+            <ul>
+                <li><a href="CV.pdf">Mon CV</a></li>
+                <li><a id='restart' href="#">ReStart</a></li>
+                <li><a id="liencommandes" href="#">Commandes</a></li>
+                <!-- <li><a href="#">Download CV</a></li> -->
+            </ul>
+             <img class="fantome1" src="fantome.png" alt="fantome">
+             <img class="fantome2" src="fantome.png" alt="fantome"> 
+             
+        </header>
+        <!-- Section qui comprend la fenetre du jeu, la div pour le menu commandes, la div statut qui comprend la vie, le score et les compétences et le bouton start pour lancer le jeu -->
+        <section>
+            <div id="commandes">
+                <img src="fantome.png" alt="fantome">
+                <p>Arrow Left = Déplacement vers la gauche</p>
+                <p>Arrow Top  = Déplacement vers le haut</p>
+                <p>Arrow Right = Déplacement vers la droite</p>
+                <p>Arrow Bottom = Déplacement vers le bas</p>
+                <p>Barre Espace = Tir des attrapes fantômes</p>
+                <p>Vous vous retrouvez dans la dernière pièce de la maison et c'est à ce moment que de nombreux fantômes vous attaquent.<br/> A vous de vous débarrasser de ces derniers afin de trouver le précieux objet laissé par l'espoir du métier, son fameux CV.<br/><br/>Bonne chance à vous ! </p>
+            </div>
+            <div id="regles">
+                <h2>Bienvenue dans mon Jeu CV</h2>
+                <p>Vous êtes à la recherche d'un nouveau développeur FullStack Javascript et vous vous retrouvé dans un lieu où un des futurs espoirs de ce métier a été vu pour la dernière fois.</br>  Vous devrez débloquer les compétences qu'il a acquis en surmontant les divers obstacles qui se dresseront devant vous afin de découvrir son CV et ainsi pouvoir le recruter dans votre entreprise.</p>
+            </div>
+            
+            <div id="fenetre">
+                <div id="statut">
+                    <h2>PV</h2>
+                    <div id="pv">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                        <img  src="vie.png" alt="PV">
+                    </div>
+                    <div id="fenetrescore">
+                        <h2>Score</h2>
+                        <label for="score" id="monscore">0</label>
+                    </div>
+                    <div id="competences">
+                        <h2>Compétences</h2>
+                        <div><img id="logo1" src="html.png" alt="html"></div>
+                        <div><img id="logo2" src="css.png" alt="css"></div>
+                        <div><img id="logo3" src="js.png" alt="js"></div>
+                        <div><img id="logo4" src="jquery.png" alt="jquery"></div>
+                        <div><img id="logo5" src="angularjs.png" alt="angular"></div>
+                        <div><img id="logo6" src="nodejs.png" alt="node"></div>
+                        <div><img id="logo7" src="mongodb.png" alt="mongo"></div>
+                        <div><img id="logo8" src="meteor.png" alt="meteor"></div>
+    
+                    </div>
+                </div>
+                <div id=fenetredefond>
+                <div id="container">
+                    <img id="img1" src="detectiveSprite.svg" alt="detective">
+                </div>
+                
+                <img id="fond" src="imagedefond.jpg" alt="fond">
+                <img id="gameover" src="gameover.png" alt="gameover">
+                <img id="detectivemort" src="détective-mort.png" alt="imagefin">
+                <img id="youwin" src="youwin.png" alt="vicory">
+                </div>
+            </div>
+            
+            <div>
+                <a href="#"  id="boutonstart">START</a>
+            </div>
+        </section>
+        <script src="jeu.js"></script>
+    </body>
+</html>

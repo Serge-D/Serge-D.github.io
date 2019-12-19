@@ -1,0 +1,237 @@
+/* CSS du Jeu */
+
+body{
+    background-image: url(fond1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+
+/*Gestion du CSS pour toutes les différentes div du Header */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Comic Sans MS',serif;
+    color: white;
+}
+
+h1 {    
+    text-align: center;
+    margin-block-start: 0;
+    color: white;
+}
+
+.fantome1{
+    animation-duration: 40s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    opacity: 0.3;
+}
+@keyframes slide {
+    from {
+        margin-left: -5%;
+    }
+        35%{
+            height: 140px;
+            width: 140px;
+        }
+    to{
+        margin-left: 100%;
+    }
+}
+.fantome2{
+    animation-duration: 40s;
+    animation-name: inverse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    opacity: 0.3;
+}
+@keyframes inverse {
+    from {
+        margin-left: 100%;
+    }
+    35%{
+        height: 140px;
+        width: 140px;
+    }
+    to{
+        margin-left: -5%;
+    }
+}
+/*Gestion du CSS pour toutes les différentes div de la section*/
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin-top: -55px;
+}
+
+#commandes{
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-family: 'Comic sans MS',serif;
+    text-align: center;
+    color: white;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+}
+
+#commandes img{
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+#regles{
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    top: 270px;
+    border: 2px solid white;
+    border-radius: 20px;    
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#statut{
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+#statut h2{
+    color: white;
+    margin: 0;
+    font-family:'Comic Sans MS',serif;
+}
+
+#pv{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+#pv h2{
+    margin-right: 10px;
+}
+
+#pv img {
+    height: 35px;
+    width: 25px;
+}
+
+#fenetrescore{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+#fenetrescore h2{
+    margin-right: 30px;
+}
+
+#competences{
+    display: flex;
+    flex-direction: row;    
+}
+
+#competences h2{
+    margin-right: 15px;
+}
+
+
+#competences img{
+    display: none;
+    align-content: center;
+    height: 35px;
+}
+
+#boutonstart{
+    height: 200px;
+    width: 200px;
+    border-radius: 125px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 600px;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: whitesmoke;
+    }
+
+
+
+#fenetre{
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    width: 1200px;
+    border: 2px solid black;
+    height: 750px;
+    position: relative;
+}
+
+#fenetredefond{
+    position : absolute;
+}
+
+#gameover{
+    z-index: 100;
+}
+
+#detectivemort{
+    position: absolute;
+    z-index: 100;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0px;
+    left: 0;
+    height: 200px;
+    right: 0;
+}
